@@ -1,28 +1,86 @@
-# dashboard com conjunto de dados de anúncios de vendas de carros
+# 🚗 Car Data Visualization App (Streamlit)
 
-#Descrição:
+## 📚 Description
 
-O projeto é um aplicativo web desenvolvido com Streamlit para visualização de dados de vendas de veículos.
-O dashboard permite ao usuário gerar gráficos interativos, como histogramas e gráficos de dispersão para explorar as variáveis do conjunto.
+This project is a web-based dashboard built with **Streamlit** and **Plotly Express** that allows users to explore a dataset of used car listings. It provides interactive histograms and scatter plots to analyze odometer readings and their relationship with other variables, helping identify patterns in vehicle usage.
 
-#Funcionalidades:
+---
 
--Exibição de cabeçalhos explicativos;
--Geração de histograma interativo usando plotly express;
--Geração de gráfico de dispersão  usando plotly express;
--Alternância entre visualizações por meio de botões checkboxes.
+## 🛠️ Technologies Used
 
-#Como usar:
+- Python 
+- Streamlit  
+- Pandas  
+- Plotly Express  
+- Jupyter Notebook
 
-1. Clone este repositório:
-   git clone https://github.com/andremaccarini/sprint5_project.git
+---
 
-2. Instale as dependências:
-   pip install -r requirement.txt
+## 🚀 How to Run
 
-3. Execute o aplicativo Streamlit:
-   streamlit run app.py
+### 👉 Option 1: Run the app (Streamlit)
 
-#Link para o App na Web
+```bash
+# Clone the repository
+git clone https://github.com/andre-maccarini/car-data-visualization.git
 
-https://car-data-analysis-o3sq.onrender.com
+# Navigate to the project folder
+cd car-data-visualization
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+```
+
+## 👉 Option 2: Open the notebook for EDA
+You can also explore the dataset and visualizations using the provided Jupyter Notebook:
+
+notebooks/eda.ipynb
+
+## 📁 Dataset
+The data comes from a CSV file vehicles.csv located in the /Data/ folder. It contains used car listings with fields such as:
+
+price, model_year, model, condition
+
+cylinders, fuel, odometer, transmission
+
+type, paint_color, is_4wd, days_listed
+
+## 🎮 Preview
+
+![App Preview](img/preview.png)
+
+## 📊 Features
+
+✅ Interactive checkbox to toggle histogram of odometer usage
+
+✅ Interactive checkbox to toggle scatter plot
+
+✅ Auto-resizing charts with Plotly Express
+
+✅ Basic data exploration via notebook
+
+## 🧠 What I Learned
+
+How to build basic interactive dashboards with Streamlit
+
+How to work with Plotly Express for visual exploration
+
+How to link Python scripts to CSV data using relative paths
+
+How to manage optional visualizations with conditionals in Streamlit
+
+## 📈 Possible Improvements
+
+ Add filters for model year, brand, or price range
+
+ Add median/mean reference lines in plots
+
+ Include more variables (e.g., price vs condition)
+
+ Add download option for filtered data
+
+## ✍️ Author
+André Maccarini
